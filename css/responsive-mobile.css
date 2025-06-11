@@ -4,7 +4,7 @@
 /* Object Color */
 /* sub */
 /* common */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +34,19 @@ li {
   list-style: none;
 }
 
-/* Noto Sans Kr */
 /* 경북대 진리체 */
 @font-face {
   font-family: "KNUTRUTHTTF";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2") format("woff2");
   font-weight: normal;
+  font-style: normal;
+}
+/* logo */
+/* 국민연금 */
+@font-face {
+  font-family: "NPSfontBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 @media (max-width: 767px) {
@@ -50,9 +57,10 @@ li {
   .title-wrap h2 {
     font-size: 30px;
     font-weight: bold;
+    font-family: "NPSfontBold";
   }
   .title-wrap p {
-    margin: 15px 0;
+    margin: 8px 0 15px;
     font-size: 14px;
   }
   /* sub-page */
@@ -251,6 +259,12 @@ li {
         -ms-flex: 1;
             flex: 1;
     z-index: 10;
+  }
+  .mobile-menu .sub-menu-list > li .sub-menu-list-content li.none-link a {
+    color: #7a7a7a;
+  }
+  .mobile-menu .sub-menu-list > li .sub-menu-list-content li.none-link a:hover {
+    color: #7a7a7a;
   }
   .mobile-menu .sub-menu-list > li .sub-menu-list-content li a {
     color: white;
@@ -672,6 +686,8 @@ li {
   }
   .news .news-inner {
     margin-top: 10px;
+    padding: 50px;
+    padding-top: 100px;
   }
   .news .news-inner .news-content .news-btn {
     height: 0px;
@@ -797,6 +813,7 @@ li {
   }
   footer .footer-inner .footer-top-wrap .logo {
     font-size: 15px;
+    font-weight: 900;
   }
   footer .footer-inner .footer-top-wrap .address p {
     font-size: 13px;

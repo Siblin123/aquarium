@@ -2,15 +2,16 @@
 @import 'reset';
 @import 'fonts';
 
+
 /* ~~~~~~~~~~ common ~~~~~~~~~~ */
 * {
   font-weight: 400;
   box-sizing: border-box;
 }
-
 body {
   font-size: 15px;
   color: $dark-black;
+  font-weight: 100;
   font-family: $primary-kr;
 }
 
@@ -30,10 +31,11 @@ section {
   h2 {
     font-size: 50px;
     font-weight: bold;
+    font-family: $title-font;
   }
 
   p {
-    margin: 20px 0;
+    margin: 10px 0 20px;
     font-size: 18px;
   }
 }
@@ -47,7 +49,7 @@ section[class*=sub-page-] {
   height: 300px;
 
   h2 {
-    color: $white;
+    color: $white; font-family: $title-font;
     padding-top: 60px;
     font-size: 40px;
     line-height: 200px;
@@ -165,14 +167,13 @@ section[class*=sub-page-] {
 
 @mixin text-underLine($underline_Height) {
   &::after {
-    position: absolute;
-    content: "";
-    left: -1px;
-    top: 78%;
-    transition: (0%, -50%);
-    color: red;
-    border: $underline_Height solid $subcolor;
+    content: '';
     width: 100%;
+    height: 2px;
+    background: rgba($color: $maincolor, $alpha: .7);
+    position: absolute;
+    bottom: -20%;
+    left: 0;
     z-index: -1;
 
   }
@@ -365,7 +366,21 @@ section[class*=sub-page-] {
 
               li {
                 margin-bottom: 20px;
-
+                &.none-link{
+                  a{
+                    color: #7a7a7a;
+                  }
+                  &:hover{
+                    a {
+                      color: #7a7a7a !important;
+                      font-weight: normal !important;
+                      padding: 0 !important;
+                    &::after {
+                      content: none !important;
+                    }
+                  }
+                  }
+                }
                 &:hover {
                   a {
                     position: relative;
@@ -442,13 +457,13 @@ section[class*=sub-page-] {
     .main-visual-text-wrap {
       top: 50%;
       left: 50%;
-
+      line-height: 1.5;
       p {
         font-size: 23.5px;
         color: white;
         margin-bottom: 35px;
       }
-
+      
       h1 {
         font-size: 50px;
         font-weight: bold;
@@ -585,6 +600,7 @@ section[class*=sub-page-] {
 /* ~~~~~~~~~~ section : program (문현아) ~~~~~~~~~~ */
 .program {
   .program-content {
+    margin-top: 50px;
     width: 100%;
     height: 390px;
     display: flex;
@@ -1053,11 +1069,12 @@ section[class*=sub-page-] {
   background-size: contain;
 
   .news-inner {
-    margin-top: 50px;
     position: relative;
+    padding-top: 100px;
 
     .title-wrap {
       color: $white;
+      margin-bottom: -20px;
     }
 
     .news-content {
@@ -1088,7 +1105,7 @@ section[class*=sub-page-] {
 
         .news-card-wrap {
           display: flex;
-          margin-top: 50px;
+          margin-top: 30px;
 
           .news-card {
             cursor: pointer;
@@ -1278,8 +1295,12 @@ footer {
 
       @at-root .logo {
         color: $white;
-        font-weight: bold;
         text-align: center;
+        font-family: $logo-font;
+        font-weight: 900;
+        a{
+          font-weight: 900;
+        }
       }
 
       .logo {
@@ -1613,14 +1634,15 @@ footer {
               p {
                 font-size: 16px;
                 position: relative;
+                color: $maincolor;
 
                 &::after {
                   content: '';
                   width: 100%;
                   height: 2px;
-                  background: rgba($color: $subcolor, $alpha: .7);
+                  background: rgba($color: $maincolor, $alpha: .7);
                   position: absolute;
-                  bottom: 7%;
+                  bottom: -20%;
                   left: 0;
                   z-index: -1;
                 }
@@ -1969,20 +1991,23 @@ footer {
               }
 
               .Sea-Creatures-card-title {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-top: 10px;
                 h3 {
-                  font-size: 23px;
-                  margin: 0;
+                  font-size: 20px;
                 }
 
                 span {
-                  font-size: 25px;
+                  font-size: 22px;
                   font-weight: bold;
-                  margin-bottom: 20px;
                 }
 
                 .Sea-Creatures-card-tag {
                   span {
                     @include text-underLine(2px);
+                    color: $maincolor;
                     font-weight: normal;
                     font-size: 18px;
                     position: relative;

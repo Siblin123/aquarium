@@ -4,7 +4,7 @@
 /* Object Color */
 /* sub */
 /* common */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +34,19 @@ li {
   list-style: none;
 }
 
-/* Noto Sans Kr */
 /* 경북대 진리체 */
 @font-face {
   font-family: "KNUTRUTHTTF";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2") format("woff2");
   font-weight: normal;
+  font-style: normal;
+}
+/* logo */
+/* 국민연금 */
+@font-face {
+  font-family: "NPSfontBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 /* ~~~~~~~~~~ common ~~~~~~~~~~ */
@@ -52,7 +59,8 @@ li {
 body {
   font-size: 15px;
   color: #333333;
-  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-family: "SUIT", sans-serif;
 }
 
 section {
@@ -71,9 +79,10 @@ section {
 .title-wrap h2 {
   font-size: 50px;
   font-weight: bold;
+  font-family: "NPSfontBold";
 }
 .title-wrap p {
-  margin: 20px 0;
+  margin: 10px 0 20px;
   font-size: 18px;
 }
 
@@ -87,6 +96,7 @@ section[class*=sub-page-] {
 }
 .page-title h2 {
   color: #FFFFFF;
+  font-family: "NPSfontBold";
   padding-top: 60px;
   font-size: 40px;
   line-height: 200px;
@@ -346,6 +356,17 @@ section[class*=sub-page-] {
 .header .sub-menu .sub-menu-inner .sub-menu-content .sub-menu-info .sub-menu-item-warps .sub-menu-item li {
   margin-bottom: 20px;
 }
+.header .sub-menu .sub-menu-inner .sub-menu-content .sub-menu-info .sub-menu-item-warps .sub-menu-item li.none-link a {
+  color: #7a7a7a;
+}
+.header .sub-menu .sub-menu-inner .sub-menu-content .sub-menu-info .sub-menu-item-warps .sub-menu-item li.none-link:hover a {
+  color: #7a7a7a !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+}
+.header .sub-menu .sub-menu-inner .sub-menu-content .sub-menu-info .sub-menu-item-warps .sub-menu-item li.none-link:hover a::after {
+  content: none !important;
+}
 .header .sub-menu .sub-menu-inner .sub-menu-content .sub-menu-info .sub-menu-item-warps .sub-menu-item li:hover a {
   position: relative;
   padding: 10px;
@@ -408,6 +429,7 @@ section[class*=sub-page-] {
 .main-visual .main-visual-inner .main-visual-text-wrap {
   top: 50%;
   left: 50%;
+  line-height: 1.5;
 }
 .main-visual .main-visual-inner .main-visual-text-wrap p {
   font-size: 23.5px;
@@ -557,6 +579,7 @@ section[class*=sub-page-] {
 
 /* ~~~~~~~~~~ section : program (문현아) ~~~~~~~~~~ */
 .program .program-content {
+  margin-top: 50px;
   width: 100%;
   height: 390px;
   display: -webkit-box;
@@ -1046,11 +1069,12 @@ section[class*=sub-page-] {
   background-size: contain;
 }
 .news .news-inner {
-  margin-top: 50px;
   position: relative;
+  padding-top: 100px;
 }
 .news .news-inner .title-wrap {
   color: #FFFFFF;
+  margin-bottom: -20px;
 }
 .news .news-inner .news-content .news-btn {
   height: 60px;
@@ -1079,7 +1103,7 @@ section[class*=sub-page-] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .news .news-inner .news-content .swiper .news-card-wrap .news-card {
   cursor: pointer;
@@ -1270,8 +1294,12 @@ footer .footer-inner .footer-top-wrap {
 }
 .logo {
   color: #FFFFFF;
-  font-weight: bold;
   text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+.logo a {
+  font-weight: 900;
 }
 
 footer .footer-inner .footer-top-wrap .logo {
@@ -1579,14 +1607,15 @@ footer .footer-inner .footer-top-wrap .address p.copy {
 .sub-page-program .program-all-inner .program-all-container .program-content .program-item .text-wrap .tags p {
   font-size: 16px;
   position: relative;
+  color: #0760A4;
 }
 .sub-page-program .program-all-inner .program-all-container .program-content .program-item .text-wrap .tags p::after {
   content: "";
   width: 100%;
   height: 2px;
-  background: rgba(56, 145, 227, 0.7);
+  background: rgba(7, 96, 164, 0.7);
   position: absolute;
-  bottom: 7%;
+  bottom: -20%;
   left: 0;
   z-index: -1;
 }
@@ -1828,14 +1857,13 @@ footer .footer-inner .footer-top-wrap .address p.copy {
   font-weight: bold;
 }
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner > h2::after {
-  position: absolute;
   content: "";
-  left: -1px;
-  top: 78%;
-  transition: 0%, -50%;
-  color: red;
-  border: 8px solid #3891E3;
   width: 100%;
+  height: 2px;
+  background: rgba(7, 96, 164, 0.7);
+  position: absolute;
+  bottom: -20%;
+  left: 0;
   z-index: -1;
 }
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner > h2::before {
@@ -1934,14 +1962,23 @@ footer .footer-inner .footer-top-wrap .address p.copy {
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner .Sea-Creatures-wrap .Sea-Creatures-items .Sea-Creatures-card-wrap .Sea-Creatures-card .Sea-Creatures-card-img:hover .Sea-Creatures-card-explan {
   opacity: 1;
 }
+.sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner .Sea-Creatures-wrap .Sea-Creatures-items .Sea-Creatures-card-wrap .Sea-Creatures-card .Sea-Creatures-card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner .Sea-Creatures-wrap .Sea-Creatures-items .Sea-Creatures-card-wrap .Sea-Creatures-card .Sea-Creatures-card-title h3 {
-  font-size: 23px;
-  margin: 0;
+  font-size: 20px;
 }
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner .Sea-Creatures-wrap .Sea-Creatures-items .Sea-Creatures-card-wrap .Sea-Creatures-card .Sea-Creatures-card-title span {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner .Sea-Creatures-wrap .Sea-Creatures-items .Sea-Creatures-card-wrap .Sea-Creatures-card .Sea-Creatures-card-title .Sea-Creatures-card-tag {
   display: -webkit-box;
@@ -1950,20 +1987,20 @@ footer .footer-inner .footer-top-wrap .address p.copy {
   gap: 20px;
 }
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner .Sea-Creatures-wrap .Sea-Creatures-items .Sea-Creatures-card-wrap .Sea-Creatures-card .Sea-Creatures-card-title .Sea-Creatures-card-tag span {
+  color: #0760A4;
   font-weight: normal;
   font-size: 18px;
   position: relative;
   display: inline-block;
 }
 .sub-page-SeaCreature .Sea-Creature .Sea-Creatures-inner .Sea-Creatures-wrap .Sea-Creatures-items .Sea-Creatures-card-wrap .Sea-Creatures-card .Sea-Creatures-card-title .Sea-Creatures-card-tag span::after {
-  position: absolute;
   content: "";
-  left: -1px;
-  top: 78%;
-  transition: 0%, -50%;
-  color: red;
-  border: 2px solid #3891E3;
   width: 100%;
+  height: 2px;
+  background: rgba(7, 96, 164, 0.7);
+  position: absolute;
+  bottom: -20%;
+  left: 0;
   z-index: -1;
 }
 

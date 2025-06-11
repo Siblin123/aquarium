@@ -11,10 +11,11 @@
     h2 {
       font-size: 30px;
       font-weight: bold;
+      font-family: $title-font;
     }
 
     p {
-      margin: 15px 0;
+      margin: 8px 0 15px;
       font-size: 14px;
     }
   }
@@ -53,7 +54,7 @@
   @at-root .container-title{
     text-align: center;
     h3{
-      font-size: 25px;
+      font-size: 25px; 
       font-weight: bold; text-align: center;
       position: relative;
       display: inline-block;
@@ -164,7 +165,7 @@
           >a {
             color: rgba($maincolor, 100%);
             position: relative;
-
+            
             &::after {
               content: "";
               position: absolute;
@@ -185,7 +186,6 @@
 
 
         }
-
         .sub-menu-list-content {
           flex: 7;
           overflow: hidden;
@@ -204,7 +204,14 @@
             margin-top: 20px;
             flex: 1;
             z-index: 10;
-
+            &.none-link{
+              a{
+                color: #7a7a7a;
+                &:hover{
+                color: #7a7a7a;
+                }
+              }
+            }
             a {
               color: white;
 
@@ -689,6 +696,8 @@
 
       .news-inner {
         margin-top: 10px;
+        padding: 50px;
+        padding-top: 100px;
 
         .title-wrap {}
 
@@ -842,6 +851,7 @@
 
           .logo {
             font-size: 15px;
+            font-weight: 900;
           }
 
           .address {

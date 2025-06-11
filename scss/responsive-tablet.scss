@@ -2,6 +2,7 @@
 @import 'reset';
 @import 'fonts';
 
+
 @media (min-width:768px) and (max-width:1024px) {
   [class*=inner] {
     width: 90%;
@@ -12,14 +13,14 @@
     h2 {
       font-size: 40px;
       font-weight: bold;
+      font-family: $title-font;
     }
 
     p {
-      margin: 20px 0;
+      margin: 10px 0 20px;
       font-size: 15px;
     }
   }
-
   @at-root .page-title {
     height: 300px;
 
@@ -692,6 +693,8 @@
 
     .news-inner {
       margin-top: 10px;
+      padding: 50px;
+      padding-top: 100px;
 
       .title-wrap {}
 

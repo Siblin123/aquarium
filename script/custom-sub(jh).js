@@ -29,6 +29,7 @@ function select_button(btn) {
 
 
   if (window.matchMedia("(max-width: 1024px)").matches) {
+    console.log("모바일")
     button_ticket.forEach((button) => {
       button.classList.remove("active");
     });
@@ -36,6 +37,7 @@ function select_button(btn) {
     // 클릭된 버튼의 배경 이미지 변경
   }
   else {
+    console.log("데탑")
     button_ticket.forEach((button) => {
       button.style.backgroundImage = "url(../imagesSub/ticket-button-none.png)";
     });
