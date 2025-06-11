@@ -390,7 +390,7 @@ li {
     color: white;
   }
   .sidenav .sidenav-container .info-item:hover i,
-.sidenav .sidenav-container .info-item:hover span {
+  .sidenav .sidenav-container .info-item:hover span {
     -webkit-transform: translateY(0px) !important;
             transform: translateY(0px) !important;
   }
