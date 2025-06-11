@@ -293,7 +293,7 @@ window.onresize = function(){
 };
 
 /* ~~~~~~~~~~ footer ~~~~~~~~~~ */
-fetch('aquarium/include/footer.html')
+fetch('/aquarium/include/footer.html')
   .then(response => response.text())
   .then(data => {
     document.querySelector('.footer-include').innerHTML = data;
