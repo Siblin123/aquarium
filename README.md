@@ -76,10 +76,10 @@
 ## 🛠 개발 환경
 
 - **사용 언어**:  
-  ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&style=flat-square) 
-  ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&style=flat-square) 
-  ![SCSS](https://img.shields.io/badge/-SCSS-CC6699?logo=sass&style=flat-square) 
-  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&style=flat-square)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&style=flat-square)
+![SCSS](https://img.shields.io/badge/-SCSS-CC6699?logo=sass&style=flat-square)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
 
 - **코드 에디터**:  
   ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-007ACC?logo=visual-studio-code&style=flat-square)
