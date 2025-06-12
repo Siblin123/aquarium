@@ -110,7 +110,8 @@
 ###Nav
 
 <div align="center">
-![Image](https://github.com/user-attachments/assets/057e198f-974a-444f-a99c-02a16fa8fe80)
+![nav hover gif](https://user-images.githubusercontent.com/95210680/227914257-abc1234c-4567-4df9-aabc-99d45ec45678.gif)
+
 </div>
 <br><br><br><br>
 
