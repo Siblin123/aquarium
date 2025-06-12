@@ -293,6 +293,8 @@
  open weather api
  ---
 
+![Image](https://github.com/user-attachments/assets/b7ef85ed-cac1-4271-a110-26a58e3de49c)
+![Image](https://github.com/user-attachments/assets/76cc6cd8-5b8e-45e5-bc24-2c1e7c558665)
 
 ## 📝 라이선스
 
