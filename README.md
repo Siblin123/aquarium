@@ -255,7 +255,6 @@
       <img src="https://github.com/user-attachments/assets/bff54d1a-bae8-4a57-bf97-3161c0df1e5b" alt="Image 6" width="100%" />
 <img src="https://github.com/user-attachments/assets/dc6670a8-1540-41f0-bac0-37e6d6327054" alt="Image 7" width="100%" />
 
-    </td>
   </tr>
 </table>
 
