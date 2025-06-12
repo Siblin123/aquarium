@@ -33,18 +33,40 @@
 
 ---
 
-## 📦 프로젝트 폴더 구조
+### 📦 프로젝트 폴더 구조
 
-  aquarium  
-┣ 📂 css  
-┣ 📂 html  
-┣ 📂 images  
-┣ 📂 imagesSub  
-┣ 📂 include  
-┣ 📂 script  
-┗ 📂 scss  
-  index
+<pre>
 
+📦 plan A  
+ ┣ 📂 css  
+ ┣ 📂 html  
+ ┃ ┣ 📜 event.html  
+ ┃ ┣ 📜 news.html  
+ ┃ ┣ 📜 program-description.html  
+ ┃ ┣ 📜 program-education.html  
+ ┃ ┣ 📜 program-experience.html  
+ ┃ ┣ 📜 Sea-Creatures_sub.html  
+ ┃ ┗ 📜 Ticket.html  
+ ┣ 📂 images  
+ ┣ 📂 include  
+ ┃ ┣ 📜 footer.html  
+ ┃ ┗ 📜 header.html  
+ ┣ 📂 script  
+ ┃ ┣ 📜 custom-sub(ham).js  
+ ┃ ┣ 📜 custom-sub(jh).js  
+ ┃ ┣ 📜 custom.js  
+ ┃ ┣ 📜 pagenation.js  
+ ┃ ┗ 📜 sub-custom.js  
+ ┣ 📂 scss  
+ ┃ ┣ 📜 fonts.scss  
+ ┃ ┣ 📜 reset.scss  
+ ┃ ┣ 📜 responsive-mobile.scss  
+ ┃ ┣ 📜 responsive-tablet.scss  
+ ┃ ┣ 📜 style.scss  
+ ┃ ┗ 📜 variables.scss  
+ ┗ 📜 index.html  
+
+</pre>
 
 ---
 
