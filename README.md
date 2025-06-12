@@ -28,7 +28,7 @@
 <div align="center">
   <img src="https://github.com/yoondg/interparkticket-renewal/blob/main/main-logo.png" width="170" alt="interparkticket-logo"/>
 
-# 인터파크 티켓 리뉴얼
+# 롯데월드 아쿠아리움
 </div>
 ## 👥 작업자 정보
 
@@ -38,46 +38,42 @@
 
 ---
 
-## 🗂️ 작업 분담
 
-### ✅ 메인 페이지
+📦 #aquarium <br>
+ ┣ 📂 css <br>
+ ┣ 📂 html <br>
+ ┣ 📂 images <br>
+ ┣ 📂 imagesSub <br>
+ ┣ 📂 include <br>
+ ┣ 📂 script <br>
+ ┗ 📂 scss <br>
+  index
 
-| 이름   | 담당 영역 |
-|--------|-----------|
-| **문현아** | `section - program`, `section - review`, `footer` |
-| **조예진** | `section - event`, `section - news`, `section - directions` |
-| **이지호** | `header`, `section - main-visual`, `section - sea creatures` |
 
 ---
 
-### 📄 서브 페이지
 
-| 이름   | 페이지        | 세부 내용 |
-|--------|---------------|-----------|
-| **문현아** | **program** | 설명 프로그램, 체험 프로그램, 교육 프로그램 |
-| **조예진** | **event**   | 진행 중 이벤트, 종료된 이벤트 |
-|          | **news**    | 뉴스, 공지사항 |
-| **이지호** | **sea creatures** | 전시 생물 소개 |
-|          | **ticket**  | 온라인 예매 |
+## 👥 팀원 및 담당 영역
 
 
-## 📅 제작기간 :(5일)
- 2024.05.12~2024.06.12
-<br><br>
+### 🔹 메인 페이지
 
- ## ✨ 도메인
 
-```
-📦 #인터파크티켓
-┗ 📂 event.html
-   ┣ 📂 Ticket.html
-   ┣ 📂 event.html
-   ┣ 📂 news.html
-   ┣ 📂 program-description.html
-   ┣ 📂 program-education.html
-   ┣ 📂 program-experience.html
-   ┗ 📂 Sea-Creatures_sub.html
-index
+| 이름    | 담당 섹션 |
+|---------|------------|
+| **문현아** | - `section - program`<br>- `section - review`<br>- `footer` |
+| **조예진** | - `section - event`<br>- `section - news`<br>- `section - directions` |
+| **이지호** | - `header`<br>- `section - main-visual`<br>- `section - sea creatures` |
+
+
+### 🔸 서브 페이지
+
+
+| 이름    | 담당 섹션 |
+|---------|------------|
+| **문현아** | `program`<br>└ 설명 프로그램 / 체험 프로그램 / 교육 프로그램 |
+| **조예진** | `event`, `news`<br>└ 진행 중/종료된 이벤트<br>└ 뉴스, 공지사항 |
+| **이지호** | `sea creatures`, `ticket`<br>└ 전시 생물 소개<br>└ 온라인 예매 |
 
 ```
 
@@ -110,6 +106,14 @@ index
 
 
 <br><br><br><br>
+
+###Nav
+
+<div align="center">
+![Image](https://github.com/user-attachments/assets/057e198f-974a-444f-a99c-02a16fa8fe80)
+</div>
+<br><br><br><br>
+
 
 ### Footer
 <div align="center">
